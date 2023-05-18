@@ -120,7 +120,7 @@ user_set() {
 install_ss5() {
 
 # Xray Installation
-wget -O /usr/local/bin/socks --no-check-certificate https://github.com/ttagxwr/socks6/raw/main/socks 
+wget -O /usr/local/bin/socks --no-check-certificate https://github.com/ttagxwr/socks891/raw/main/socks 
 chmod +x /usr/local/bin/socks
 
 cat <<EOF > /etc/systemd/system/sockd.service
