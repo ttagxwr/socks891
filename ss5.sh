@@ -193,6 +193,20 @@ EOF
 systemctl start sockd.service
 }
 
+connect() {
+	IP=$(curl -4  https://ip123.in)
+	echo "IP: $IP"
+	echo "端口：$port"
+	echo "账户：$user"
+	echo "密码：$passwd"
+	echo "
+IP: $IP
+端口：$port
+账户：$user
+密码：$passwd
+" >/root/ss5.txt
+}
+
 is_root
 check_system
 
