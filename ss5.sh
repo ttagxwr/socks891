@@ -194,7 +194,7 @@ systemctl start sockd.service
 }
 
 connect() {
-	IP=$(curl -4  https://ip.sb)
+	IP=$(curl -4  http://ip123.in)
 	echo "IP: $IP"
 	echo "端口：$port"
 	echo "账户：$user"
